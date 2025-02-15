@@ -10,7 +10,8 @@
             TextColor="Black"
             FontSize="50"
             HorizontalTextAlignment="Center"
-            HorizontalOptions="Start"/>
+            HorizontalOptions="Start"
+            Text="HEADER"/>
         <Label 
             Text="Click me"
             BackgroundColor="Black"

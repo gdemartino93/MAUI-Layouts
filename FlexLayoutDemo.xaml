@@ -3,32 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiLayout.FlexLayoutDemo"
              Title="FlexLayoutDemo">
-    
-    <FlexLayout Direction="Column" >
-        <Label Background="Aqua"
-               Text="HEADER"
-               HorizontalTextAlignment="Center"
-               FontSize="Large"/>
 
-        <FlexLayout FlexLayout.Grow="1">
-            <Label Text="CONTENT"
-                   FontSize="20"
-                   BackgroundColor="Gray"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
-                   FlexLayout.Order="1"
-                   FlexLayout.Grow="1"/>
+    <FlexLayout Direction="Column">
+        <Label Text="HEADER" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Background="AntiqueWhite" FlexLayout.Basis="30"/>
 
-            <BoxView BackgroundColor="Blue" FlexLayout.Basis="50" FlexLayout.Order="-1"/>
-            <BoxView BackgroundColor="Blue" FlexLayout.Basis="50" FlexLayout.Order="2"/>
-            <Button Text="Save" FlexLayout.AlignSelf="Center"/>
+        <FlexLayout FlexLayout.Grow="1" JustifyContent="SpaceBetween" Direction="Row">
+            <BoxView BackgroundColor="AntiqueWhite" FlexLayout.Basis="40" FlexLayout.Order="1"/>
+            <BoxView BackgroundColor="AntiqueWhite" FlexLayout.Basis="40" FlexLayout.Order="3"/>
+            <Label Background="DimGrey" FlexLayout.Grow="1" FlexLayout.Order="2" />
         </FlexLayout>
 
-        <Label Text="FOOTER" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Background="BurlyWood" FlexLayout.Basis="40" FontSize="Large"/>
+        <Label Background="Aquamarine" FlexLayout.Basis="50"/>
 
 
     </FlexLayout>
-    
-    
+
+
 
 </ContentPage>
